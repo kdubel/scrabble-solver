@@ -52,7 +52,7 @@ module Scrabble
     #   # => An array of words that the tiles t, h, e, r, e plus a blank tile
     #   #    could make.
     def self.words_for letters, options = Hash.new(nil)
-      letters  = letters.downcase.split(//)
+      letters  = letters.split(//)
       unknowns = letters.count "?"
       letters.delete "?"
 
